@@ -1,0 +1,38 @@
+[
+  {
+    "ContainingType": "BlackJackLab.Controllers.BlackjackController",
+    "Method": "GetGame",
+    "RelativePath": "api/Blackjack",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlackJackLab.Controllers.BlackjackController",
+    "Method": "NewGame",
+    "RelativePath": "api/Blackjack",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlackJackLab.Controllers.BlackjackController",
+    "Method": "Play",
+    "RelativePath": "api/Blackjack/play",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "action",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -30,3 +30,4 @@ C:\Users\Josh\OneDrive\Desktop\workspace\Labs\BlackJackLab\obj\Debug\net8.0\refi
 C:\Users\Josh\OneDrive\Desktop\workspace\Labs\BlackJackLab\obj\Debug\net8.0\BlackJackLab.pdb
 C:\Users\Josh\OneDrive\Desktop\workspace\Labs\BlackJackLab\obj\Debug\net8.0\BlackJackLab.genruntimeconfig.cache
 C:\Users\Josh\OneDrive\Desktop\workspace\Labs\BlackJackLab\obj\Debug\net8.0\ref\BlackJackLab.dll
+C:\Users\Josh\OneDrive\Desktop\workspace\Labs\BlackJackLab\obj\Debug\net8.0\BlackJackLab.sourcelink.json

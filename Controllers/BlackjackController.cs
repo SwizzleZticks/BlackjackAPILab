@@ -1,4 +1,5 @@
 ﻿using BlackJackLab.Models;
+using BlackJackLab.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,12 +11,11 @@ namespace BlackJackLab.Controllers
     {
         // This holds the current game state
         private static GameState? _gameState;
-        private static HttpClient _httpClient = new HttpClient();
+        private BlackjackService _service;
 
-        private const string BASE_URL = "https://deckofcardsapi.com/api/deck";
-
-        public BlackjackController()
+        public BlackjackController(BlackjackService service)
         {
+            _service = service;
         }
 
         [HttpGet]
