@@ -1,7 +1,10 @@
 ﻿using BlackJackLab.Models;
 using BlackJackLab.Services;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Http;
+using System.Text.Json;
 
 namespace BlackJackLab.Controllers
 {
@@ -9,9 +12,8 @@ namespace BlackJackLab.Controllers
     [ApiController]
     public class BlackjackController : ControllerBase
     {
-        // This holds the current game state
-        private static GameState? _gameState;
-        private BlackjackService _service;
+        private static BlackjackService _service;
+        private static GameState? _currentGame;
 
         public BlackjackController(BlackjackService service)
         {
@@ -21,9 +23,9 @@ namespace BlackJackLab.Controllers
         [HttpGet]
         public IActionResult GetGame()
         {
-            if (_gameState != null)
+            if (_currentGame != null)
             {
-                return Ok(_gameState);
+                return Ok(_currentGame);
             }
             else
             {
@@ -34,17 +36,71 @@ namespace BlackJackLab.Controllers
         [HttpPost]
         public async Task<IActionResult> NewGame()
         {
-            // TODO create new GameState instance, set starting values,
-            // and set _gameState.
-            return Created("/api/Blackjack", _gameState);
+            _currentGame = await _service.CreateGameAsync();
+
+            return Created("/api/Blackjack", _currentGame);
         }
 
         [HttpPost("play")]
-        public async Task<IActionResult> Play(string action)
+        public async Task<IActionResult> Play([FromQuery]string action)
         {
-            // TODO handle each action.
-            // Else, respond "Invalid action"
-            return ValidationProblem($"Invalid action: {action}.");
+            if (_currentGame == null)
+            {
+                return NotFound("There is no game in progress, please start a game first.");
+            }
+
+            if (action == "hit")
+            {
+                Card drawnCard = await _service.DrawCardAsync(_currentGame.DeckId);
+                _currentGame.PlayerScore += Card.GetCardValue(drawnCard);
+
+                _currentGame.PlayerCards.Add(drawnCard);
+
+                if (_currentGame.PlayerScore > 21)
+                {
+                    _currentGame.GameOver = true;
+                    _currentGame.Outcome = "Bust";
+                }
+                else if (_currentGame.PlayerScore == 21)
+                {
+                    _currentGame.GameOver = true;
+                    _currentGame.Outcome = "Win";
+                }
+
+            }
+
+            else if (action == "stand")
+            {
+                while (_currentGame.DealerScore < 17)
+                {
+                    Card drawnCard = await _service.DrawCardAsync(_currentGame.DeckId);
+
+                    _currentGame.DealerCards.Add(drawnCard);
+                    _currentGame.DealerScore += Card.GetCardValue(drawnCard);
+                }
+
+                _currentGame.GameOver = true;
+
+                if (_currentGame.DealerScore > 21 ||_currentGame.PlayerScore > _currentGame.DealerScore)
+                {
+                    _currentGame.Outcome = "Win";
+                }
+                else if (_currentGame.PlayerScore == _currentGame.DealerScore)
+                {
+                    _currentGame.Outcome = "Standoff";
+                }
+                else
+                {
+                    _currentGame.Outcome = "Loss";
+                }
+            }
+
+            else
+            {
+                return ValidationProblem($"Invalid action: {action}.");
+            }
+
+            return Ok();
         }
     }
 }

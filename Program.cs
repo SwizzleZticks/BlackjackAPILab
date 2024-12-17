@@ -1,4 +1,6 @@
 
+using BlackJackLab.Services;
+
 namespace BlackJackLab
 {
     public class Program
@@ -8,8 +10,18 @@ namespace BlackJackLab
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
             builder.Services.AddControllers();
+
+            // Add HttpClient to the DI container for BlackjackService
+            builder.Services.AddHttpClient<BlackjackService>(client =>
+            {
+                // Specify the base address for the HTTP client
+                client.BaseAddress = new Uri("https://www.deckofcardsapi.com/api/deck");
+            });
+
+            // Register the BlackjackService
+            builder.Services.AddScoped<BlackjackService>();
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -31,5 +43,6 @@ namespace BlackJackLab
 
             app.Run();
         }
+
     }
 }

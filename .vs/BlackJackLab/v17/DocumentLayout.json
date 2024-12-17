@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Josh\\OneDrive\\Desktop\\workspace\\Labs\\BlackJackLab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|c:\\users\\josh\\onedrive\\desktop\\workspace\\labs\\blackjacklab\\services\\blackjackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|solutionrelative:services\\blackjackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|c:\\users\\josh\\onedrive\\desktop\\workspace\\labs\\blackjacklab\\controllers\\blackjackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|solutionrelative:controllers\\blackjackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|c:\\users\\josh\\onedrive\\desktop\\workspace\\labs\\blackjacklab\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|solutionrelative:models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|c:\\users\\josh\\onedrive\\desktop\\workspace\\labs\\blackjacklab\\services\\blackjackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|solutionrelative:services\\blackjackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|c:\\users\\josh\\onedrive\\desktop\\workspace\\labs\\blackjacklab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|solutionrelative:models\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|c:\\users\\josh\\onedrive\\desktop\\workspace\\labs\\blackjacklab\\controllers\\blackjackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|solutionrelative:controllers\\blackjackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|c:\\users\\josh\\onedrive\\desktop\\workspace\\labs\\blackjacklab\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6946A424-D7EB-42A1-8BAE-0D78702A7649}|BlackJackLab.csproj|solutionrelative:models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,26 +50,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BlackjackService.cs",
               "DocumentMoniker": "C:\\Users\\Josh\\OneDrive\\Desktop\\workspace\\Labs\\BlackJackLab\\Services\\BlackjackService.cs",
               "RelativeDocumentMoniker": "Services\\BlackjackService.cs",
               "ToolTip": "C:\\Users\\Josh\\OneDrive\\Desktop\\workspace\\Labs\\BlackJackLab\\Services\\BlackjackService.cs",
               "RelativeToolTip": "Services\\BlackjackService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T19:29:58.276Z",
+              "WhenOpened": "2024-12-17T19:58:46.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Card.cs",
               "DocumentMoniker": "C:\\Users\\Josh\\OneDrive\\Desktop\\workspace\\Labs\\BlackJackLab\\Models\\Card.cs",
               "RelativeDocumentMoniker": "Models\\Card.cs",
               "ToolTip": "C:\\Users\\Josh\\OneDrive\\Desktop\\workspace\\Labs\\BlackJackLab\\Models\\Card.cs",
               "RelativeToolTip": "Models\\Card.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwDoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T19:03:58.295Z",
               "EditorCaption": ""
@@ -82,7 +82,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Josh\\OneDrive\\Desktop\\workspace\\Labs\\BlackJackLab\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T15:52:35.464Z",
               "EditorCaption": ""
@@ -95,20 +95,20 @@
               "RelativeDocumentMoniker": "Models\\GameState.cs",
               "ToolTip": "C:\\Users\\Josh\\OneDrive\\Desktop\\workspace\\Labs\\BlackJackLab\\Models\\GameState.cs",
               "RelativeToolTip": "Models\\GameState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T15:48:39.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "BlackjackController.cs",
               "DocumentMoniker": "C:\\Users\\Josh\\OneDrive\\Desktop\\workspace\\Labs\\BlackJackLab\\Controllers\\BlackjackController.cs",
               "RelativeDocumentMoniker": "Controllers\\BlackjackController.cs",
               "ToolTip": "C:\\Users\\Josh\\OneDrive\\Desktop\\workspace\\Labs\\BlackJackLab\\Controllers\\BlackjackController.cs",
               "RelativeToolTip": "Controllers\\BlackjackController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T15:47:20.518Z",
               "EditorCaption": ""
